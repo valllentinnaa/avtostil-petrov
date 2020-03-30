@@ -1,12 +1,12 @@
 /*
-Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.scss.
+Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.
         on line 5 of creative.scss
 
 1: // Import custom variables (overrides Bootstrap default variables)
 2: @import "./variables.scss";
 3: 
 4: // Import Bootstrap
-5: @import "~bootstrap/scss/bootstrap.scss";
+5: @import "~bootstrap/scss/bootstrap";
 6: 
 7: // Import custom styles
 8: @import "./global.scss";
@@ -52,4 +52,4 @@ C:/Ruby27-x64/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.scss.\A         on line 5 of creative.scss\A \A 1: // Import custom variables (overrides Bootstrap default variables)\A 2: @import \"./variables.scss\";\A 3: \A 4: // Import Bootstrap\A 5: @import \"~bootstrap/scss/bootstrap.scss\";\A 6: \A 7: // Import custom styles\A 8: @import \"./global.scss\";\A 9: @import \"./navbar.scss\";\A 10: @import \"./masthead.scss\";"; }
+  content: "Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.\A         on line 5 of creative.scss\A \A 1: // Import custom variables (overrides Bootstrap default variables)\A 2: @import \"./variables.scss\";\A 3: \A 4: // Import Bootstrap\A 5: @import \"~bootstrap/scss/bootstrap\";\A 6: \A 7: // Import custom styles\A 8: @import \"./global.scss\";\A 9: @import \"./navbar.scss\";\A 10: @import \"./masthead.scss\";"; }
