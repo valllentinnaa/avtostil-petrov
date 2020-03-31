@@ -125,7 +125,11 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .nav-logo {
-    width: 140px;
+  .custom-mobile-wrapper {
+    background-color: #191919 !important;
+  }
+
+  .custom-mobile-wrapper-container {
+    justify-content: center !important;
   }
 }
