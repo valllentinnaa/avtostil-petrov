@@ -18,8 +18,6 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic'
-          rel='stylesheet' type='text/css'>
 
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
@@ -45,13 +43,17 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Logo</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        <a class="navbar-brand js-scroll-trigger nav-logo" href="#page-top">
+            <img class="img-fluid" src="img/main/logo.png" alt="">
+        </a>
+
+        <button class="navbar-toggler navbar-toggler-right nav-mobile-custom" type="button" onclick="mobileClick"
+                data-toggle="collapse"
+                data-target="#mobileUl" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="collapse navbar-collapse" id="mobileUl">
             <ul class="navbar-nav ml-auto my-2 my-lg-0">
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#about">За нас</a>
@@ -98,29 +100,31 @@
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="mt-5">
                     <i class="fas fa-4x fa-car text-primary mb-4"></i>
-                    <h3 class="h4 mb-2">Sturdy Themes</h3>
-                    <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+                    <h3 class="h4 mb-2">Нова Визия</h3>
+                    <p class="text-muted mb-0">Премахваме драскотините, вдлъбнатините и всяка козметична забележка</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="mt-5">
                     <i class="fas fa-4x fa-car-battery text-primary mb-4"></i>
-                    <h3 class="h4 mb-2">Up to Date</h3>
-                    <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+                    <h3 class="h4 mb-2">Лъскава Визия</h3>
+                    <p class="text-muted mb-0">Пастиране и полиране до най-финното и перфектно ниво за свeжа визия</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="mt-5">
                     <i class="fas fa-4x fa-car-crash text-primary mb-4"></i>
-                    <h3 class="h4 mb-2">Ready to Publish</h3>
-                    <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+                    <h3 class="h4 mb-2">Обратно на пътя</h3>
+                    <p class="text-muted mb-0">Дори и най-тежките случаии при удър дожели до сгенати отчупени парчета
+                        имат ремонт</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="mt-5">
                     <i class="fas fa-4x fa-hammer text-primary mb-4"></i>
-                    <h3 class="h4 mb-2">Made with Love</h3>
-                    <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
+                    <h3 class="h4 mb-2">Точната боя</h3>
+                    <p class="text-muted mb-0">Професионалисти се грижат за това да напраят максимално точната боя за
+                        всяка кола</p>
                 </div>
             </div>
         </div>
@@ -140,26 +144,46 @@
                 <hr class="divider bg-custom my-4">
                 <p class="text-white-75 mb-4">
                     Ето и някой от най-големите предимства от работния процес в нашата фирма:</p>
-                <p class="text-white-50 mb-2">
-                    <i class="text-white-75 fas fa-coins"></i>
-                    Седмично заплащане на заработения надник.
-                </p>
-                <p class="text-white-50 mb-2">
-                    <i class="text-white-75 fas fa-thermometer-half"></i>
-                    Постояна температура за работа (около 25 градуса).
-                </p>
-                <p class="text-white-50 mb-2">
-                    <i class="text-white-75 fas fa-check"></i>
-                    Фиксиран надник на детайл.
-                </p>
-                <p class="text-white-50 mb-2">
-                    <i class="text-white-75 fas fa-certificate"></i>
-                    Най-висок клас оборудване.
-                </p>
-                <p class="text-white-50 mb-2">
-                    <i class="text-white-75 fas fa-chalkboard-teacher"></i>
-                    Възможност за обучение, както на вас, така и на ваши помощници за работа в екип.
-                </p>
+                <div class="row text-white-50 mb-2">
+                    <div class="col-1">
+                        <i class="text-white-75 fas fa-coins"></i>
+                    </div>
+                    <div class="col-11">
+                        Седмично заплащане на заработения надник.
+                    </div>
+                </div>
+                <div class="row text-white-50 mb-2">
+                    <div class="col-1">
+                        <i class="text-white-75 fas fa-thermometer-half"></i>
+                    </div>
+                    <div class="col-11">
+                        Постояна температура за работа (около 25 градуса).
+                    </div>
+                </div>
+                <div class="row text-white-50 mb-2">
+                    <div class="col-1">
+                        <i class="text-white-75 fas fa-check"></i>
+                    </div>
+                    <div class="col-11">
+                        Фиксиран надник на детайл.
+                    </div>
+                </div>
+                <div class="row text-white-50 mb-2">
+                    <div class="col-1">
+                        <i class="text-white-75 fas fa-certificate"></i>
+                    </div>
+                    <div class="col-11">
+                        Най-висок клас оборудване.
+                    </div>
+                </div>
+                <div class="row text-white-50 mb-2">
+                    <div class="col-1">
+                        <i class="text-white-75 fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="col-11">
+                        Възможност за обучение, както на вас, така и на ваши помощници за работа в екип.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -264,26 +288,46 @@
                     Нашата основна дейност е външната обвивка на колата.
                     Потърсете ни ако държите на:
                 </p>
-                <p class="text-white-50 mb-4">
-                    <i class="text-white-75 fas fa-hourglass-half"></i>
-                    Изпълнение на поръчката в указания период.
-                </p>
-                <p class="text-white-50 mb-4">
-                    <i class="text-white-75 fas fa-certificate"></i>
-                    Перфектно качество с дълъг живот.
-                </p>
-                <p class="text-white-50 mb-4">
-                    <i class="text-white-75 fas fa-wallet"></i>
-                    Фиксирани цени, ясно разграфени!
-                </p>
-                <p class="text-white-50 mb-4">
-                    <i class="text-white-75 fas fa-users"></i>
-                    Екип от професиналисти с дългогодишен опит.
-                </p>
-                <p class="text-white-50 mb-4">
-                    <i class="text-white-75 fas fa-tools"></i>
-                    Проверка на качеството лично от Шеф Петров!
-                </p>
+                <div class="row text-white-50 mb-2">
+                    <div class="col-1">
+                        <i class="text-white-75 fas fa-hourglass-half"></i>
+                    </div>
+                    <div class="col-11">
+                        Изпълнение на поръчката в указания период.
+                    </div>
+                </div>
+                <div class="row text-white-50 mb-2">
+                    <div class="col-1">
+                        <i class="text-white-75 fas fa-certificate"></i>
+                    </div>
+                    <div class="col-11">
+                        Перфектно качество с дълъг живот.
+                    </div>
+                </div>
+                <div class="row text-white-50 mb-2">
+                    <div class="col-1">
+                        <i class="text-white-75 fas fa-wallet"></i>
+                    </div>
+                    <div class="col-11">
+                        Фиксирани цени, ясно разграфени!
+                    </div>
+                </div>
+                <div class="row text-white-50 mb-2">
+                    <div class="col-1">
+                        <i class="text-white-75 fas fa-users"></i>
+                    </div>
+                    <div class="col-11">
+                        Екип от професиналисти с дългогодишен опит.
+                    </div>
+                </div>
+                <div class="row text-white-50 mb-2">
+                    <div class="col-1">
+                        <i class="text-white-75 fas fa-tools"></i>
+                    </div>
+                    <div class="col-11">
+                        Проверка на качеството лично от Шеф Петров!
+                    </div>
+                </div>
             </div>
             <div class="col-md-6 d-none d-md-block">
                 <img class="img-fluid" src="img/main/salon-petrov%20(4)-min.jpeg" alt="">
@@ -329,7 +373,24 @@
         <div class="small text-center text-muted">Copyright &copy; 2020 - Автостил Петров</div>
     </div>
 </footer>
+<script type="application/javascript">
+    const mobileNav = document.querySelector("navbar-collapse");
 
+    document.querySelector("navbar-toggler").addEventListener('click', () => {
+        debugger
+    });
+
+    let isOpen = false;
+    const mobileClick = () => {
+        debugger
+        if (isOpen) {
+            mobileNav.style.display = "block";
+            isOpen = false;
+        } else {
+            isOpen = true;
+        }
+    };
+</script>
 
 </body>
 

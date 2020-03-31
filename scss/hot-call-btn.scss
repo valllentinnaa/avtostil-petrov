@@ -2,8 +2,8 @@
 
 #callme {
   position: fixed;
-  right: 50px;
-  bottom: 100px;
+  right: 40px;
+  bottom: 35px;
   width: 70px;
   height: 70px;
   cursor: pointer;
@@ -114,4 +114,18 @@
 .bg-custom {
   background-color: #191919;
   color: #f4623a;
+}
+
+.nav-mobile-custom {
+  background-color: #ede5e5;
+}
+
+.nav-logo {
+  width: 140px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-logo {
+    width: 140px;
+  }
 }
